@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+    <servlet>
+        <servlet-name> myservlet </servlet-name>
+        <servlet-class> in.sp.backend.MyServlet </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> myservlet </servlet-name>
+        <url-pattern> /aaa </url-pattern>
+    </servlet-mapping>	
+        
+	<servlet>
+    	<servlet-name>myloginpage</servlet-name>
+    	<servlet-class>in.sp.backend.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>myloginpage</servlet-name>
+    	<url-pattern>/mylogin</url-pattern>
+	</servlet-mapping>    
+    
+    <servlet>
+        <servlet-name> myreg </servlet-name>
+        <servlet-class> in.sp.backend.Register </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>	
+        <servlet-name> myreg </servlet-name>
+        <url-pattern> /myReg </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>mydashboard</servlet-name>
+    	<servlet-class>in.sp.backend.Dashboard</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>mydashboard</servlet-name>
+    	<url-pattern>/Dashboard</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    	<servlet-name>CourseSelection</servlet-name>
+    	<servlet-class>in.sp.backend.CourseSelection</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>CourseSelection</servlet-name>
+    	<url-pattern>/submitCourses</url-pattern>
+	</servlet-mapping>
+
+
+    <!-- Set login.java as the welcome file -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    
+</web-app>
